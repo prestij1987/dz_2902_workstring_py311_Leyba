@@ -1,0 +1,78 @@
+<!--Вывести на экран таблицу из 4 строк: три товара и 
+сумма без использования цикла
+С помощью только while сделать задачи 2, 3, 4
+Получить математический пример с клавиатуры, вычислить'--->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script></script>
+</head>
+<body onload="">
+    <h1>Корзина покупок</h1>
+    <img src="image/food.jpeg" alt="корзина" width="300px" height="200px">
+    <div>
+        <form action="">
+            <label for="food">Название продуктов</label><input type="text" id="foods" value='name' placeholder="продукты" min="" max="">
+            <input type="number" id="sum" value="'введите цену">
+            <label for="cena">вес</label>
+            <select name="вес" id="">
+            <option value="">1</option>
+            <option value="">5</option>
+            <option value="">10</option>
+            </select>
+        </form>
+    </div>
+    <select name='категория продуктов 'id="item">
+        <option>фрукты</option>
+        <option>овощи</option>
+        <option>мясо</option>
+        <option>крупы</option>
+
+    </select>
+    <button id="click" onclick="price()">Расчитать</button>
+    <p>
+    <table>
+        <thead>
+            <tr>
+                <td>Название</td>
+                <td>кол-во</td>
+                <td>цена</td>
+                <td>СУММА</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>картошка</td>
+                <td>1 кг</td>
+                <td>50 руб.</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Мясо</td>
+                 <td>5 кг.</td>
+                 <td>400 руб.</td>
+                 <td></td>
+            </tr>
+            <tr>
+                <td>Яблоки</td>
+                <td>10 кг.</td>
+                <td>80 руб.</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="itog_1">Итого</td>
+                <td id_="itog_2"></td>
+                <td id="itog_3"></td>
+            </tr>
+        </tfoot>
+    </table>
+    </p>
+</body>
+</html>
